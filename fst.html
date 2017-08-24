@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FSTOFFICIAL</title>
+<script type="text/javascript" src="jquery.js" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	var a,b,c,d,f,z;
+	a=1;
+	b=0;
+	c=0;
+	d=0;
+	$("#b2").hide();
+	$("#b3").hide();
+	$("#b4").hide();
+	
+	$("#a1").click(function(){
+		if(a==0)
+		{
+			$("#b1").slideDown(2000); a=1;
+			if(b==1){ $("#b2").slideUp(1000); b=0; }
+			if(c==1){ $("#b3").slideUp(1000); c=0; }
+			if(d==1){ $("#b4").slideUp(1000); d=0;}
+		}});
+	
+	$("#a2").click(function(){
+		if(b==0)
+		{
+			$("#b2").slideDown(2000); b=1;
+			if(a==1){ $("#b1").slideUp(1000); a=0; }
+			if(c==1){ $("#b3").slideUp(1000); c=0; }
+			if(d==1){ $("#b4").slideUp(1000); d=0;}
+		}
+	});
+	
+	$("#a3").click(function(){
+		if(c==0)
+		{
+			$("#b3").slideDown(2000); c=1;
+			if(b==1){ $("#b2").slideUp(1000); b=0; }
+			if(a==1){ $("#b1").slideUp(1000); a=0; }
+			if(d==1){ $("#b4").slideUp(1000); d=0;}
+		}
+	});
+	
+	$("#a4").click(function(){
+		if(d==0)
+		{
+			$("#b4").slideDown(2000); d=1;
+			if(a==1){ $("#b1").slideUp(1000); a=0; }
+			if(b==1){ $("#b2").slideUp(1000); b=0; }
+			if(c==1){ $("#b3").slideUp(1000); c=0;}
+		}
+	
+});
+	});
+
+</script>
+
+<link href="CSS33 Menu_files/css3menu1/style.css" rel="stylesheet" type="text/css">
+</head>
+<link rel="stylesheet" type="text/css" href="fst.css">
+
+<body>
+<div id="main">
+<div id="wrapper">
+	<div id="banner">
+    	<h1 class="sitename"><i>ICFAI TECH SCHOOL</i></h1>
+    </div>
+ 	<div id="menu"> 
+  	
+  	<ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="#" style="height:8px;line-height:8px;" id="a1">HOME</a></li>
+	<li class="topmenu"><a href="#" style="height:8px;line-height:8px;" id="a2"><span>COURSES</span></a>
+	<ul>
+		<li><a href="Cloning ITS/CSE.html">C.S.E</a></li>
+		<li><a href="Cloning ITS/M.E.html">M.E</a></li>
+		<li><a href="Cloning ITS/E.C.E.html">E.C.E</a></li>
+		<li><a href="Cloning ITS/E.E.E.html">E.E.E</a></li>
+		<li><a href="Cloning ITS/C.E.html">C.E</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:8px;line-height:8px;" id="a3">REGISTRATION</a></li>
+	<li class="toplast"><a href="#" style="height:8px;line-height:8px;" id="a4">CONTACT US</a></li>
+</ul>
+  	
+   	</div>
+    </div>
+  
+    <div id="middle">
+    	<div id="ad">
+        	<h1 align="center">ITS</h1><br>
+        </div>
+        <div id="content">
+        	
+       <div id="f1">
+<div id="b1"><p><marquee><b>WELCOME</b></marquee>This is the homepage of the official website for I.T.S </p></div>
+     </div>
+      <div id="f2">
+<div id="b2"><p>Courses offered in ITS are:
+	 	<ul>
+		<li>[C.S.E] Computer Science and Engineering</li>
+		<li>[M.E] Mechanical Engineering</li>
+		<li>[E.C.E] Electronics and Communication Engineering</li>
+		<li>[E.E.E]Electronics and Electrical Engineering</li>
+		<li>[C.E]  Civil Engineering</li>
+		</ul></p>
+			</div>
+
+<div id="f3">
+
+<form id="b3" action="after Regstrtn.php" align="center">
+<h1>ITS <marquee scrolldelay="10"><font size="+2">An Institution for your success</font></marquee></h1>
+
+First Name <input type="text"> 
+<p>Last Name <input type="text">  </p>
+<p>Date of Birth <input type="date">  </p>
+<p>Gender <input type="radio" name="r1"> Male <input type="radio" name="r1">Female
+  </p>
+<p>Country <select> <option>select</option><option>INDIA</option><option>US</option><option>UK</option><option>AUSTRALIA</option> checked India</select></p>
+<p>Stream<select><option>select</option><option>CSE</option><option>M.E</option><option>E.C.E</option><option>E.E.E</option></select> </p>
+<p>Email Id <input type="url"></p>
+<p>Phone No. <input type="number"> </p>
+<p>  <input name="s1" type="button" class="z18" value="REGISTER" ></p>
+	</form>
+		</div>
+		
+<div id="f4">
+<p id="b4">Contact us:<br>Call us @ 9413435264 <br>email @
+	dgautam1997.dg@gmail.com</p>
+		</div>
+        </div>
+    </div>
+    <div id="bottom">
+    <p>
+    	<a href="after Regstrtn.html">Home</a>
+        <a href="framed page.html">Courses</a>
+        <a href="farzi.html">Contact</a>
+        <a href="#">Sitemap</a>
+        
+    </p>
+    <p>
+    	Copyright &copy; DG 2017 All rights reserved. 
+    </p>
+    </div>
+
+	</div>
+</div>
+</body>
+</html>
